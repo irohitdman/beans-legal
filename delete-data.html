@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Delete your data · Beans</title>
+<meta name="description" content="How to delete your Beans data from your phone and your Google Drive backup.">
+<meta name="theme-color" content="#161412">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 108 108' aria-hidden='true'><rect width='108' height='108' rx='24' fill='%23161412'/><g transform='translate(54 54) scale(0.72) translate(-50.5 -40.5)'><path d='M45.4152 54.1442C40.5018 61.5867 31.1417 62.7035 27.2772 56.8357C23.4126 50.968 31.6943 45.2332 29.9097 39.1173C27.4191 31.5034 20.3015 38.154 14.6436 39.3565C6.90557 40.8072 3.83285 32.7353 8.28834 25.8749C15.7014 12.8601 30.7194 10.5408 41.6542 18.202C53.171 26.3211 54.4503 41.4632 45.4152 54.1442ZM34.1555 34.9188C34.934 33.9294 34.3652 32.2568 32.9101 31.1119C31.455 29.967 29.6956 29.8077 28.917 30.7972C28.1385 31.7867 28.7073 33.4593 30.1624 34.6042C31.6175 35.7491 33.3769 35.9083 34.1555 34.9188Z' fill-rule='evenodd' fill='%23C74F0E'></path><path d='M75.2025 9.00013C87.2025 8.00013 96.2025 17.0001 93.2025 26.0001C90.2025 35.0001 77.2025 31.0001 72.2025 38.0001C66.2025 47.0001 79.2025 49.0001 85.2025 54.0001C93.2025 61.0001 87.2025 71.0001 76.2025 72.0001C56.2025 75.0001 41.2025 61.0001 40.2025 43.0001C39.2025 24.0001 54.2025 10.0001 75.2025 9.00013ZM64.2025 37.0001C62.5025 37.0001 61.2025 39.0001 61.2025 41.5001C61.2025 44.0001 62.5025 46.0001 64.2025 46.0001C65.9025 46.0001 67.2025 44.0001 67.2025 41.5001C67.2025 39.0001 65.9025 37.0001 64.2025 37.0001Z' fill-rule='evenodd' fill='%23FF7A1A' stroke='%23161412' stroke-width='6' stroke-linejoin='round' paint-order='stroke'></path></g></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#161412;--ink2:#5b5550;--ground:#F1EFEC;--surface:#fff;--orange:#FF6A1F;--line:#e4e0db}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.65 Geist,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--ink);text-decoration-color:var(--orange);text-underline-offset:3px;text-decoration-thickness:2px}
+header{max-width:760px;margin:0 auto;padding:28px 20px 8px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:auto}
+.tile{width:40px;height:40px;border-radius:11px;background:var(--ink);display:grid;place-items:center}
+.tile svg{width:40px;height:40px}
+.word{font-weight:600;font-size:22px;letter-spacing:-.045em}
+nav{display:flex;gap:6px;flex-wrap:wrap}
+nav a{text-decoration:none;font-size:14px;padding:7px 13px;border-radius:999px;color:var(--ink2)}
+nav a:hover{background:#e7e3de}
+nav a[aria-current]{background:var(--ink);color:#F4F1EE}
+main{max-width:760px;margin:16px auto 0;padding:0 20px}
+.card{background:var(--surface);border-radius:24px;padding:36px 32px;box-shadow:0 1px 0 var(--line)}
+h1{font-size:34px;line-height:1.15;letter-spacing:-.03em;font-weight:600;margin:0 0 6px}
+.meta{color:var(--ink2);font-size:14px;margin:0 0 24px}
+h2{font-size:20px;letter-spacing:-.02em;font-weight:600;margin:36px 0 8px;scroll-margin-top:16px}
+h3{font-size:16px;font-weight:600;margin:20px 0 4px}
+p,li{color:#2b2723}
+ul{padding-left:22px}li{margin:4px 0}
+.summary{background:var(--ground);border-radius:16px;padding:18px 20px;margin:0 0 8px}
+.summary h2{margin-top:0}
+.summary ul{margin:0}
+table{width:100%;border-collapse:collapse;font-size:14.5px;margin:12px 0}
+th,td{text-align:left;vertical-align:top;padding:10px 10px;border-bottom:1px solid var(--line)}
+th{font-weight:600;background:#faf9f7}
+.toc{columns:2;column-gap:28px;font-size:14.5px;padding-left:18px}
+.toc li{break-inside:avoid}
+.cta{display:inline-block;background:var(--ink);color:#F4F1EE;text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:600;margin:6px 0}
+.pill{display:inline-block;font-size:12px;font-weight:600;padding:2px 9px;border-radius:999px;background:#FFE7DA;color:#a53c05}
+mark.todo{background:#FFE7DA;color:#a53c05;padding:0 4px;border-radius:4px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:20px}
+.cards a{display:block;background:var(--ground);border-radius:18px;padding:18px;text-decoration:none}
+.cards b{display:block;font-size:17px}.cards span{color:var(--ink2);font-size:14px}
+footer{max-width:760px;margin:0 auto;padding:24px 20px 48px;color:var(--ink2);font-size:13.5px;display:flex;gap:16px;flex-wrap:wrap}
+footer a{color:var(--ink2)}
+@media (max-width:560px){.card{padding:26px 20px;border-radius:20px}h1{font-size:28px}.toc{columns:1}}
+@media print{body{background:#fff}nav,footer{display:none}.card{box-shadow:none;padding:0}}
+</style>
+</head>
+<body>
+<header>
+  <a class="brand" href="index.html"><span class="tile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" aria-hidden="true"><g transform="translate(54 54) scale(0.72) translate(-50.5 -40.5)"><path d="M45.4152 54.1442C40.5018 61.5867 31.1417 62.7035 27.2772 56.8357C23.4126 50.968 31.6943 45.2332 29.9097 39.1173C27.4191 31.5034 20.3015 38.154 14.6436 39.3565C6.90557 40.8072 3.83285 32.7353 8.28834 25.8749C15.7014 12.8601 30.7194 10.5408 41.6542 18.202C53.171 26.3211 54.4503 41.4632 45.4152 54.1442ZM34.1555 34.9188C34.934 33.9294 34.3652 32.2568 32.9101 31.1119C31.455 29.967 29.6956 29.8077 28.917 30.7972C28.1385 31.7867 28.7073 33.4593 30.1624 34.6042C31.6175 35.7491 33.3769 35.9083 34.1555 34.9188Z" fill-rule="evenodd" fill="#C74F0E"></path><path d="M75.2025 9.00013C87.2025 8.00013 96.2025 17.0001 93.2025 26.0001C90.2025 35.0001 77.2025 31.0001 72.2025 38.0001C66.2025 47.0001 79.2025 49.0001 85.2025 54.0001C93.2025 61.0001 87.2025 71.0001 76.2025 72.0001C56.2025 75.0001 41.2025 61.0001 40.2025 43.0001C39.2025 24.0001 54.2025 10.0001 75.2025 9.00013ZM64.2025 37.0001C62.5025 37.0001 61.2025 39.0001 61.2025 41.5001C61.2025 44.0001 62.5025 46.0001 64.2025 46.0001C65.9025 46.0001 67.2025 44.0001 67.2025 41.5001C67.2025 39.0001 65.9025 37.0001 64.2025 37.0001Z" fill-rule="evenodd" fill="#FF7A1A" stroke="#161412" stroke-width="6" stroke-linejoin="round" paint-order="stroke"></path></g></svg></span><span class="word">Beans</span></a>
+  <nav><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a><a href="delete-data.html" aria-current="page">Delete data</a></nav>
+</header>
+<main><article class="card">
+
+<h1>Delete your Beans data</h1>
+<p class="meta">Beans: Expense Tracker · by Monkey Labs</p>
+
+<p>Beans has <b>no accounts and no server</b>, so we don't hold any of your data and there is nothing to request from us. Your data is only on your phone, plus your own Google Drive if you turned on backup. You can delete all of it yourself, at any time:</p>
+
+<h2>1. On your phone</h2>
+<p>Choose one:</p>
+<ul>
+<li>Uninstall Beans. All of its data is deleted with it.</li>
+<li>Or keep the app and clear its data: Android <b>Settings › Apps › Beans › Storage › Clear storage</b>.</li>
+</ul>
+
+<h2>2. Your Google Drive backup (only if you turned it on)</h2>
+<p>Choose one:</p>
+<ul>
+<li>In the app: <b>Settings › Backup › Delete backup</b>.</li>
+<li>Without the app: open <a href="https://drive.google.com/drive/settings" rel="noopener">Google Drive settings</a> on a computer, then go to <b>Manage apps › Beans › Options › Delete hidden app data</b>.</li>
+</ul>
+<p>To also remove Beans's access to your Drive, go to your <a href="https://myaccount.google.com/connections" rel="noopener">Google Account › Third-party connections</a> and remove Beans.</p>
+
+<h2>What gets deleted</h2>
+<table>
+<tr><th>Data</th><th>Where it lives</th><th>How to delete</th></tr>
+<tr><td>Transactions, bank SMS text, categories, rules, notes, settings</td><td>Your phone</td><td>Step 1</td></tr>
+<tr><td>Encrypted backup of the same data</td><td>Your Google Drive (hidden app folder)</td><td>Step 2</td></tr>
+<tr><td>Anything held by us</td><td>None</td><td>Nothing to do: we never receive your data</td></tr>
+</table>
+
+<p>Need help? Email <a href="mailto:teammonkeylab@gmail.com">teammonkeylab@gmail.com</a>. More detail is in our <a href="privacy.html#deletion">privacy policy</a>.</p>
+
+</article></main>
+<footer><span>© 2026 Monkey Labs</span><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="delete-data.html">Delete data</a><a href="mailto:teammonkeylab@gmail.com">teammonkeylab@gmail.com</a></footer>
+</body>
+</html>
